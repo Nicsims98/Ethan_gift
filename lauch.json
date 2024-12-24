@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Local Server",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+            "args": ["--mode", "development"],
+            "cwd": "${workspaceFolder}",
+            "protocol": "inspector",
+            "runtimeExecutable": null,
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        },
+        {
+            "name": "Launch Chrome against localhost",
+            "type": "pwa-chrome",
+            "request": "launch",
+            "url": "http://localhost:9000",
+            "webRoot": "${workspaceFolder}/src",
+            "breakOnLoad": true,
+            "sourceMaps": true,
+            "skipFiles": ["<node_internals>/**"]
+        }
+    ]
+}
