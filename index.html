@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan's Game</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#game-section">Game</a></li>
+                    <li><a href="#level-section">Levels</a></li>
+                    <li><a href="#enemy-section">Enemies</a></li>
+                </ul>
+            </nav>
+            <h1>Welcome to Your Personal Game Ethan 2024</h1>
+        </header>
+        <main>
+            <section id="game-section">
+                <h2>Game Interface</h2>
+                <div id="game-container"></div>
+                <button id="start-game">Start Game</button>
+                <div id="score-container">Score: <span id="score">0</span></div>
+                <div id="health-container">Health: <span id="health">100</span></div>
+                <div id="progress-container">
+                    <label for="progress">Progress:</label>
+                    <progress id="progress" value="0" max="100"></progress>
+                </div>
+            </section>
+            <section id="level-section">
+                <h2>Levels</h2>
+                <div id="level-container"></div>
+            </section>
+            <section id="enemy-section">
+                <h2>Enemies</h2>
+                <div id="enemy-container"></div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Your Own Video Game</p>
+        </footer>
+    </div>
+    <script type="module" src="assets/js/scripts.js"></script>
+</body>
+</html>
