@@ -1,0 +1,24 @@
+{
+    "files.exclude": {
+        "out": true, // Hide the "out" folder with the compiled JS files
+        "node_modules": true, // Hide the "node_modules" folder
+        "dist": true // Hide the "dist" folder
+    },
+    "search.exclude": {
+        "out": true, // Exclude "out" folder from search results
+        "node_modules": true, // Exclude "node_modules" folder from search results
+        "dist": true // Exclude "dist" folder from search results
+    },
+    "typescript.tsc.autoDetect": "off", 
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true // 
+    },
+    "prettier.requireConfig": true, // 
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ]
+}
